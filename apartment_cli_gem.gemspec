@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'apartment_cli_gem/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "apartment_cli_gem"
+  spec.name          = "apartment_search"
   spec.version       = ApartmentCliGem::VERSION
   spec.authors       = ["Christopher Bruen"]
   spec.email         = ["bruen.chris@gmail.com"]
