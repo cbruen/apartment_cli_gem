@@ -1,3 +1,8 @@
 #!/usr/bin/env ruby
 
-puts "Hello Everyone!"
+
+#puts "Testing to see if it works!!"
+
+require './lib/apartment_cli_gem'
+puts "try"
+ApartmentCliGem::Run.run
