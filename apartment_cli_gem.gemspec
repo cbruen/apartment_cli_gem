@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = ApartmentCliGem::VERSION
   spec.authors       = ["Christopher Bruen"]
   spec.email         = ["bruen.chris@gmail.com"]
-
+  spec.require_paths = ["lib", "lib/apartment_cli_gem"]
   spec.summary       = %q{Lets you scroll through Craigslist room share listings for select cities.}
 
   spec.homepage      = "https://rubygems.org/gems/apartment_search"
