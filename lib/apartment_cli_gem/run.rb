@@ -1,8 +1,11 @@
 
-
+require 'pry'
 class ApartmentCliGem::Run
 
 def self.run
+
+count = 0
+city_name = false
 
 	puts "Welcome to the Craigslist Room Lising Scraper!\n\n"
 	puts "What city would you like to search for?\n"
@@ -11,6 +14,7 @@ def self.run
 	city = gets.chomp
 
 	case city
+	when city.split('.')[0].to_i == 9 then puts "hello!"
 	when "1" || "1." then city_name = "washingtondc"
 	when "2" || "2." then city_name = "newyork"
 	when "3" || "3." then city_name = "sfbay"
@@ -19,12 +23,13 @@ def self.run
 	when "6" || "6." then city_name = "boston"
 	else
 		puts "invalid submission"
-		city = gets.chomp
+		return
 	end
 
-
 	scrape = ApartmentCliGem::Scraper.new(city_name)
-  	scrape.increment
+		scrape.group
+		scrape.increment
 
 end
+
 end
